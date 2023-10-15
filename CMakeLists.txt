@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8.12)
 
 project(mxt)
 
-set(CMAKE_CXX_FLAGS  "-Wfatal-errors -g  -O3 -pedantic -std=c++14 ${CMAKE_CXX_FLAGS}")
+set(CMAKE_CXX_FLAGS  "-Wfatal-errors -march=native -O3 -pedantic -std=c++14 ${CMAKE_CXX_FLAGS}")
 
 add_executable(trie_queue tests/trie_queue.cc)
 add_executable(radix_sort tests/radix_sort.cc)
